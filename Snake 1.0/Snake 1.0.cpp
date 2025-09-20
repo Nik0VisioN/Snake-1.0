@@ -74,7 +74,7 @@ void Input()
    if (GetAsyncKeyState(VK_RIGHT) || GetAsyncKeyState('D') ) dir = RIGHT;
    if (GetAsyncKeyState(VK_UP)    || GetAsyncKeyState('W') ) dir = UP;
    if (GetAsyncKeyState(VK_DOWN)  || GetAsyncKeyState('S') ) dir = DOWN;
-   if (GetAsyncKeyState('X') & 0x8000) gameOver = true;
+   if (GetAsyncKeyState('X') ) gameOver = true;
 
 }
 
@@ -142,11 +142,11 @@ int main()
       bool waitInput = true;
       while (waitInput) 
       {
-         if (GetAsyncKeyState('R') & 0x8000) 
+         if (GetAsyncKeyState('R') ) 
          {
             waitInput = false;
          }
-         if (GetAsyncKeyState('Q') & 0x8000) 
+         if (GetAsyncKeyState('Q') ) 
          {
             waitInput = false;
             exitGame = true;
