@@ -3,4 +3,4 @@
 
 
 1st screenshot - this is how the game looks.
-2ые screenshot - menu of game
+2st screenshot - menu of game
